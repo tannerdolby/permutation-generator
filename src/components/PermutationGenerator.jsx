@@ -22,13 +22,11 @@ export default function PermutationGenerator() {
                         if (userInput[0] == '[' && userInput[userInput.length - 1] == ']') {
                             const arr = JSON.parse(userInput);
                             const permutations = getPermutations(arr);
-
                             setOutput(JSON.stringify(permutations));
-
                         } else {
                             const words = userInput.split(' ');
                             if (words.length > 1) {
-                                setOutput("Error! Only word or array is allowed to be permuted at a time");
+                                setOutput("Error! Only word or array is allowed to be permutated at a time");
                                 return;
                             }
                             const permutations = [];
